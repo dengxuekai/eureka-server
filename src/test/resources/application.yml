@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+eureka:
+  server:
+    enableSelfPreservation: true
+  instance:
+    appname: eureka-server
+    preferIpAddress: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+logging:
+  level:
+    root: info
