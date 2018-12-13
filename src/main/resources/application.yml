@@ -5,6 +5,15 @@ spring:
   application:
     name: eureka-server
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  health:
+    defaults:
+      enabled: false
+
 info:
   version: 1.0.0
 
@@ -20,4 +29,4 @@ eureka:
     wait-time-in-ms-when-sync-empty: 0
     enable-self-preservation: false
     use-read-only-response-cache: false
-    eviction-interval-timer-in-ms: 5000
+    eviction-interval-timer-in-ms: 50000
